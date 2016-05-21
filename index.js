@@ -84,7 +84,7 @@ var MandrillAdapter = mandrillOptions => {
     }
 
     return new Promise((resolve, reject) => {
-        mandrill_client.messages.send(
+        mandrill_client.messages.sendTemplate(
         {
           message: message,
           async: true
