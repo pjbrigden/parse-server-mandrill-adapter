@@ -73,7 +73,7 @@ var MandrillAdapter = mandrillOptions => {
       to: [{
         email: options.user.get("email")
       }],
-      subject: mandrillOptions.passwordResetSubject,
+      //subject: mandrillOptions.passwordResetSubject,
       template_name: 'forgot-your-password-no-problem',
       //text: mandrillOptions.passwordResetBody,
       global_merge_vars: [
